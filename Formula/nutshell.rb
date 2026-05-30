@@ -1,9 +1,9 @@
 class Nutshell < Formula
   desc "Local personal trace ingestion runtime"
   homepage "https://github.com/androidStern/nutshell"
-  url "https://github.com/androidStern/nutshell/releases/download/v0.1.9/nutshell-0.1.9-darwin-arm64.tar.gz"
-  version "0.1.9"
-  sha256 "4241667b8bd0e647078a0176c25e4261ef664e83c8113764a99ae5a21a77042d"
+  url "https://github.com/androidStern/nutshell/releases/download/v0.1.10/nutshell-0.1.10-darwin-arm64.tar.gz"
+  version "0.1.10"
+  sha256 "0ab5557383f4a70eae6a61f35fe8c35fe6351843bd986474f2db40bdb26c97d8"
   license "MIT"
 
   def install
