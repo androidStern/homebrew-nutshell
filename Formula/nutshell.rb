@@ -1,19 +1,17 @@
 class Nutshell < Formula
   desc "Local personal trace ingestion runtime"
   homepage "https://github.com/androidStern/nutshell"
-  version "0.1.26"
+  version "0.1.27"
   license "MIT"
 
   depends_on macos: :sonoma
 
-  on_arm do
-    url "https://github.com/androidStern/nutshell/releases/download/v0.1.26/nutshell-0.1.26-darwin-arm64.tar.gz"
-    sha256 "62806e5e3191d7f730f78cd2d15120c17098f7ba9aa82d2c80481a46dd849177"
-  end
-
-  on_intel do
-    url "https://github.com/androidStern/nutshell/releases/download/v0.1.26/nutshell-0.1.26-darwin-x64.tar.gz"
-    sha256 "220ba25633953244599a8abd47faf4fa2cabc9f6b9182a70a31c80e39ad53c2d"
+  if Hardware::CPU.arm?
+    url "https://github.com/androidStern/nutshell/releases/download/v0.1.27/nutshell-0.1.27-darwin-arm64.tar.gz"
+    sha256 "045527a082dbc6378d95e4b12925b122c2658d7bb2b7eda46c0e54cafba09a9f"
+  else
+    url "https://github.com/androidStern/nutshell/releases/download/v0.1.27/nutshell-0.1.27-darwin-x64.tar.gz"
+    sha256 "589d1e9bf39eb606190b746ff87ce8e1e1760c073a5717c402774797a2f5c829"
   end
 
   def install
